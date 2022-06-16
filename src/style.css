@@ -1,0 +1,120 @@
+.info {
+  color: white;
+  text-align: center;
+
+}
+
+h3, h4, h2{
+  margin: 0;
+}
+.about {
+  color: white;
+  margin-bottom: 20px;
+}
+
+.interests {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  color: white;
+
+}
+
+.footer {
+  display: flex;
+  color: white;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+li{
+  float: left;
+  justify-content: space-around;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+.fa-github, .fa-whatsapp, .fa-instagram, .fa-envelope{
+  background: white;
+  opacity: .7;
+  color: black;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.info-img
+{
+  max-width: 100%;
+  max-height: 100;
+  margin-bottom: 10px;
+
+}
+
+.card-content{
+  overflow: hidden;
+  margin-top: 25px;
+  border: solid;
+  border-color: transparent;
+  border-width: 5px;
+  border-radius: 15px;
+  background-color: black;
+}
+
+.card-text{
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.card {
+  width: 350px;
+  background-color: #181818;
+  align-content: center;
+  outline-color: white;
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  border: solid;
+  border-radius: 15px;
+  border-width: 5px;
+  border-color: white;
+
+
+}
+
+.button-links{
+  display: flex;
+  justify-content: space-around;
+  padding-left: 20%;
+  padding-right: 20%;
+  margin-bottom: 20px;
+}
+
+
+
+button{
+  margin: 5px;
+  margin-top: 10px;
+  padding: 5px;
+}
+
+body {
+  display: flex;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-image: url("./images/background.jpeg");
+  background-repeat: no-repeat;
+  justify-content: center;
+  background-size: cover;
+  font-family: 'Roboto Flex', sans-serif;
+}
+
+.website{
+  color: white;
+}
+.website:hover {
+  opacity: .7;
+}
