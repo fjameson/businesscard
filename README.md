@@ -3,7 +3,9 @@ create an ssh folder and use this keygen command
 
 ### `mkdir .ssh && cd .ssh/ && ssh-keygen -t rsa -b 4096 -C "email@gmail.com"`
 
-Then go to your git account's settings and add the .pub to you ssh keys
+Then go to your git account's settings and add the .pub to you ssh keys. To add to git repo on https and not ssh make sure to run these 2 commands first:
+
+### `sudo chown 600 ~/.ssh/ssh_key.pub && git remote set-url origin git@github.com:User/Reponame.git && ssh-add ~/.ssh/ssh_key`
 
 # Running React in ubuntu 22 on AWS
 First thing's first, react doesn't do well with ubuntu unless you have the binary instance for node which you can get from this website https://github.com/nodesource/distributions.  Select the one that works best for you and run the commands they tell you.  Then install npm with: 
