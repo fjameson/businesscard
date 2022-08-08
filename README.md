@@ -1,3 +1,29 @@
+# SSHing to git repo
+create an ssh folder and use this keygen command
+
+### `mkdir .ssh && cd .ssh/ && ssh-keygen -t rsa -b 4096 -C "email@gmail.com"`
+
+Then go to your git account's settings and add the .pub to you ssh keys
+
+# Running React in ubuntu 22 on AWS
+First thing's first, react doesn't do well with ubuntu unless you have the binary instance for node which you can get from this website https://github.com/nodesource/distributions.  Select the one that works best for you and run the commands they tell you.  Then install npm with: 
+
+### `npm install`
+
+Run any updates they suggest as well.  Next run a build:
+
+### `npm run build`
+
+If the output spits back and updates needed run those commands as well.  The last command you need to run terminalwise is a redirect.  Npm redirects port 80 to port 3000 and aws needs to be configured for that on the terminal side it looks like:
+
+### `sudo iptables -t nat -A PREROUTING -p tcp --dport 80 -j REDIRECT --to-ports 3000`
+
+On the AWS console side, just make sure both port 3000 and 80 are open to all.  Yes both need to be open.  Now all you need is to run:
+
+### `npm start`
+
+And put either <http://public_ip> or <http://public_ip:3000> in your browser.  You should be able to see your react website that way :)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
