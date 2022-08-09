@@ -26,6 +26,10 @@ On the AWS console side, just make sure both port 3000 and 80 are open to all.  
 
 And put either <http://public_ip> or <http://public_ip:3000> in your browser.  You should be able to see your react website that way :)
 
+# Adding DNS to React App/EC2 Node
+
+Go to https://www.noip.com/, create an account and create a hostname, attach the public ip to entry.  From there start the react app and put the dns name in the the browser 
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
