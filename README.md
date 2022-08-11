@@ -1,4 +1,15 @@
+# How to run website (working title for now) 
+
+ssh to the aws instance and run 
+
+### `npm start`
+
+Then put this dns name in the broswer
+
+### `http://finnjameson.ddnsking.com/`
+
 # SSHing to git repo
+
 create an ssh folder and use this keygen command
 
 ### `mkdir .ssh && cd .ssh/ && ssh-keygen -t rsa -b 4096 -C "email@gmail.com"`
