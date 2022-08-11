@@ -18,7 +18,11 @@ Run any updates they suggest as well.  Next run a build:
 
 If the output spits back and updates needed run those commands as well.  The last command you need to run terminalwise is a redirect.  Npm redirects port 80 to port 3000 and aws needs to be configured for that on the terminal side it looks like:
 
-### `sudo iptables -t nat -A PREROUTING -p tcp --dport 80 -j REDIRECT --to-ports 3000`
+### `sudo iptables -t nat -A PREROUTING -p tcp --dport 443 -j REDIRECT --to-ports 3000`
+
+Next make sure you are using HTTPS add the env var HTTPS=true in the npm start script in package.json under the scripts start section.  It should look like this:
+
+### `"start": "export HTTPS=true&&react-scripts start",`
 
 On the AWS console side, just make sure both port 3000 and 80 are open to all.  Yes both need to be open.  Now all you need is to run:
 
